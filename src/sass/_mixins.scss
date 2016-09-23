@@ -1,0 +1,48 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin placeholder-focus {
+  :focus::-webkit-input-placeholder {@content}
+  :focus:-moz-placeholder           {@content}
+  :focus::-moz-placeholder          {@content}
+  :focus:-ms-input-placeholder      {@content}
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+$xsmall: 360px;
+$small: 480px;
+$medium: 640px;
+$large: 1024px;
+$xlarge: 1440px;
+
+@mixin breakpoint($point) {
+  @if $point == xlarge-b  {
+    @media only screen and(max-width: $xlarge) { @content ; }
+  }
+  @else if $point == large-b {
+    @media only screen and(max-width: $large) { @content ; }
+  }
+  @else if $point == medium-b {
+    @media only screen and(max-width: $medium) { @content ; }
+  }
+  @else if $point == small-b {
+    @media only screen and (max-width: $small){ @content ; }
+  }
+  @else if $point == xsmall-b {
+    @media only screen and (max-width: $xsmall){ @content ; }
+  }
+}
