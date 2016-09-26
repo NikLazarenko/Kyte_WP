@@ -1,0 +1,102 @@
+.contact {
+  padding-bottom: $section-margin-bottom;
+  background: url("../img/contact-background.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+.contact__field {
+  display: block;
+  height: 50px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .11);
+  color: $white-color;
+  border: none;
+  transition: $main-transition;
+  &:hover {
+    background-color: rgba(255, 255, 255, .13);
+    transition: $main-transition;
+  }
+  &:focus {
+    background-color: rgba(255, 255, 255, .08);
+    box-shadow: 0 0 3px 1px $dark-gray-color;
+  }
+}
+
+.contact__textarea {
+  height: 212px;
+  padding: 20px 15px;
+  resize: none;
+  line-height: 1;
+}
+
+@include placeholder {
+  text-transform: uppercase;
+  color: #a1a1a1;
+  font-size: 12px;
+  font-weight: 900;
+}
+@include placeholder-focus {
+  color: transparent;
+
+}
+
+.contact--padding {
+  padding-left: 0;
+}
+
+.contact__details {
+  padding: 0 16px;
+}
+
+.contact__details-title {
+  padding-bottom: 14px;
+  color: $white-color;
+}
+
+.contact__detail-desc {
+  padding-bottom: 30px;
+  color: #d9d9d9;
+}
+
+.contact__info-item {
+  position: relative;
+  padding-bottom: 17px;
+  text-indent: 25px;
+  color: #d9d9d9;
+}
+
+.contact__address {
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 9px;
+    height: 13px;
+    background: url("../img/contact-icons.png") no-repeat -7px -7px;
+  }
+}
+
+.contact__phone {
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 10px;
+    height: 11px;
+    background: url("../img/contact-icons.png") no-repeat -7px -56px;
+  }
+}
+
+.contact__message {
+  &:before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: url("../img/contact-icons.png") no-repeat -7px -34px;
+  }
+}

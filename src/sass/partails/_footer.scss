@@ -1,0 +1,30 @@
+.footer {
+  padding: 60px 0;
+}
+
+.footer__copyright {
+  display: block;
+  padding-bottom: 28px;
+  color: $light-black-color;
+  text-align: center;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__social-link {
+  display: inline-block;
+  margin: 0 13px;
+  color: $footer-social;
+  font-size: 30px;
+  transition: $main-transition;
+  &:focus,
+  &:active {
+    color: $footer-social;
+  }
+  &:hover {
+    color: #808080;
+    transition: $main-transition;
+  }
+}

@@ -3,17 +3,29 @@
   background-color: #f0f0f0;
 }
 
+.blog__row {
+  margin-bottom: 38px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .blog__item {
   box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.05);
+  transition: .15s ease;
   img {
     width: 100%;
     height: 280px;
     background-color: $light-black-color;
   }
+  &:hover {
+    transform: scale(1.05);
+    transition: .15s ease;
+  }
 }
 
 .blog__item-panel {
-  padding: 28px 25px;
+  padding: 30px 23px 26px 25px;
   background-color: #f9f9f9;
   color: #9f9f9f;
   text-transform: uppercase;
@@ -47,7 +59,7 @@
 }
 
 .blog__item-description {
-  padding: 32px 28px;
+  padding: 23px 30px 15px 25px;
   background-color: $white-color;
 }
 

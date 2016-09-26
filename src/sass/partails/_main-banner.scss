@@ -1,8 +1,11 @@
 .main-banner {
   display: table;
   width: 100%;
+  padding-top: 88px;
   height: $main-banner-height;
-  background-color: $main-gray-color;
+  background: url("../img/main-background.png") no-repeat center top fixed;
+  background-size: cover;
+  //background-color: $main-gray-color;
 }
 
 .main-banner__caption {
@@ -49,6 +52,9 @@
     background-color: rgba(0, 0, 0, .4);
     color: $white-color;
     transition: $main-transition;
+  }
+  &:focus {
+    color: $white-color;
   }
   .fa {
     position: absolute;
