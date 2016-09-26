@@ -3,9 +3,8 @@
   width: 100%;
   padding-top: 88px;
   height: $main-banner-height;
-  background: url("../img/main-background.png") no-repeat center top fixed;
+  background: url("../img/main-background.png") no-repeat center 80px fixed;
   background-size: cover;
-  //background-color: $main-gray-color;
 }
 
 .main-banner__caption {
