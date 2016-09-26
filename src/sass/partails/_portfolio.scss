@@ -1,0 +1,25 @@
+.portfolio {
+  background-color: $black-color;
+}
+
+.portfolio__subtitle {
+  color: $white-color;
+}
+
+.portfolio__section-desc {
+  padding-bottom: 48px;
+  color: $light-gray-color;
+}
+
+.portfolio__items {
+  margin-bottom: $section-margin-bottom;
+}
+
+.portfolio__item {
+  height: 600px;
+  background-color: $dark-gray-color;
+}
+
+.portfolio__item--padding {
+  padding-right: 0;
+}

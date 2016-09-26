@@ -1,0 +1,70 @@
+.about {
+  margin-bottom: $section-margin-bottom;
+}
+
+.about__photo {
+  margin-bottom: 59px;
+  width: 323px;
+  height: 319px;
+  border-radius: 50%;
+  background-color: $dark-gray-color;
+}
+
+.about__text-title {
+  margin-top: 36px;
+  margin-bottom: 30px;
+  line-height: 35px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.about--column-padding {
+  padding-left: 10px;
+  &:first-of-type {
+    padding-left: 0;
+  }
+  &:last-of-type {
+    padding-right: 5px;
+    padding-left: 20px;
+  }
+}
+
+.about__button {
+  position: relative;
+  display: block;
+  margin: 50px auto 0 auto;
+  width: 140px;
+  background-color: $main-blue-color;
+  color: $white-color;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  text-indent: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 45px;
+  font-weight: 300;
+  font-size: 14px;
+  transition: $main-transition;
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '\f1d9';
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 20px;
+  }
+  &:hover {
+    background-color: #3c7dad;
+    color: $white-color;
+    transition: $main-transition;
+  }
+  &:active {
+    background-color: #336992;
+    color: $white-color;
+  }
+  &:focus {
+    color: $white-color;
+    text-decoration: none;
+  }
+}
