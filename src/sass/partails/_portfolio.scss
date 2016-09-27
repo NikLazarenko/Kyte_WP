@@ -25,7 +25,7 @@
     display: block;
     height: 600px;
     min-width: 100%;
-    @include breakpoint(laptop) {
+    @include breakpoint(desktop) {
       height: auto;
       width: 100%;
       max-height: none;

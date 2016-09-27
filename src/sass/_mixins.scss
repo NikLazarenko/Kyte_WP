@@ -23,13 +23,13 @@
   }
 }
 
-$large: 1199px;
-$big: 991px;
-$medium: 767px;
-$small: 639px;
-$low: 479px;
-$extra-small: 359px;
-$minimum: 319px;
+$large: 1200px;
+$big: 992px;
+$medium: 768px;
+$small: 640px;
+$low: 480px;
+$extra-small: 360px;
+$minimum: 320px;
 
 @mixin breakpoint($point) {
   @if $point == desktop {
