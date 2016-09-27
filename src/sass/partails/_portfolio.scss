@@ -1,5 +1,8 @@
 .portfolio {
   background-color: $black-color;
+  .container-fluid {
+    max-width: 2200px;
+  }
 }
 
 .portfolio__subtitle {
@@ -16,8 +19,19 @@
 }
 
 .portfolio__item {
-  height: 600px;
-  background-color: $dark-gray-color;
+  position: relative;
+  overflow: hidden;
+  img {
+    display: block;
+    height: 600px;
+    min-width: 100%;
+    @include breakpoint(laptop) {
+      height: auto;
+      width: 100%;
+      max-height: none;
+      max-width: none;
+    }
+  }
 }
 
 .portfolio__item--padding {

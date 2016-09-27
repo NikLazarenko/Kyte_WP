@@ -30,10 +30,9 @@ p{
 
 a{
   text-decoration: none;
-  &:hover{
-    text-decoration: none;
-  }
-  &:active{
+  &:hover,
+  &:active,
+  &:focus{
     text-decoration: none;
   }
 }

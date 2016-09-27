@@ -7,7 +7,8 @@
   width: 323px;
   height: 319px;
   border-radius: 50%;
-  background-color: $dark-gray-color;
+  background: url("../img/photo.jpg") no-repeat center $dark-gray-color;
+  background-size: cover;
 }
 
 .about__text-title {

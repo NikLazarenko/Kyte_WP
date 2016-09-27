@@ -50,4 +50,7 @@
     color: $main-green-color;
     transition: $main-transition;
   }
+  &:focus {
+    color: $main-green-color;
+  }
 }

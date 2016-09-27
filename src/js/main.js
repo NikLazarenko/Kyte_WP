@@ -9,4 +9,9 @@ $(document).ready(function() {
             $(".header").removeClass('header--fixed');
         }
     });
+
+    $('.header__menu a, .about__button').click(function(){
+        $(this).mPageScroll2id({offset: 60});
+    });
+
 });
