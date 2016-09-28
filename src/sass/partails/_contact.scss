@@ -2,6 +2,9 @@
   padding-bottom: $section-margin-bottom;
   background: url("../img/contact-background.png") no-repeat center fixed;
   background-size: cover;
+  @include breakpoint(phone) {
+    padding-bottom: $section-margin-bottom-small;
+  }
 }
 
 .contact__field {
@@ -22,6 +25,9 @@
     background-color: rgba(255, 255, 255, .08);
     box-shadow: 0 0 3px 1px $dark-gray-color;
   }
+  @include breakpoint(phone) {
+    height: 40px;
+  }
 }
 
 .contact__textarea {
@@ -29,6 +35,9 @@
   padding: 20px 15px;
   resize: none;
   line-height: 1;
+  @include breakpoint(phone) {
+    height: 150px;
+  }
 }
 
 @include placeholder {
@@ -44,10 +53,19 @@
 
 .contact--padding {
   padding-left: 0;
+  @include breakpoint(laptop) {
+    padding-left: 15px;
+  }
 }
 
 .contact__details {
   padding: 0 16px;
+  @include breakpoint(laptop) {
+    padding: 0;
+  }
+  @include breakpoint(tablet) {
+    padding-top: 40px;
+  }
 }
 
 .contact__details-title {

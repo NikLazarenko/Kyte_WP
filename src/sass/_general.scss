@@ -39,8 +39,14 @@ a{
 
 p {
   color: $light-black-color;
-  line-height: 33px;
-
+  line-height: $main-line-height;
+  @include breakpoint(big-phones) {
+    line-height: 26px;
+    text-align: justify;
+  }
+  @include breakpoint(custom) {
+    line-height: 21px;
+  }
 }
 
 h3 {
@@ -70,11 +76,28 @@ h3 {
       border: 12px solid transparent;
       border-top: 9px solid $main-green-color;
     }
+    @include breakpoint(tablet) {
+      padding-left: 10px;
+    }
+    @include breakpoint(phone) {
+      line-height: 75px;
+      font-size: 22px;
+    }
+  }
+  @include breakpoint(phone) {
+    margin-bottom: 60px;
   }
 }
 
 .cancel-padding {
   padding: 0;
+}
+
+.row--padding {
+  @include breakpoint(desktop) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .button {

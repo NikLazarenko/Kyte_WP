@@ -1,5 +1,8 @@
 .footer {
   padding: 60px 0;
+  @include breakpoint(phone) {
+    padding: 40px 0;
+  }
 }
 
 .footer__copyright {
@@ -26,5 +29,8 @@
   &:hover {
     color: #808080;
     transition: $main-transition;
+  }
+  @include breakpoint(phone) {
+    font-size: 26px;
   }
 }

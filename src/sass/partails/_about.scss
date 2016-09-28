@@ -1,14 +1,29 @@
 .about {
   margin-bottom: $section-margin-bottom;
+  @include breakpoint(phone) {
+    margin-bottom: $section-margin-bottom-small;
+  }
+}
+
+.about__general-row {
+  margin-bottom: 59px;
 }
 
 .about__photo {
-  margin-bottom: 59px;
   width: 323px;
   height: 319px;
   border-radius: 50%;
   background: url("../img/photo.jpg") no-repeat center $dark-gray-color;
   background-size: cover;
+  @include breakpoint(desktop) {
+    width: 250px;
+    height: 250px;
+  }
+  @include breakpoint(laptop) {
+    margin: auto;
+    width: 280px;
+    height: 278px;
+  }
 }
 
 .about__text-title {
@@ -17,19 +32,29 @@
   line-height: 35px;
   font-size: 22px;
   font-weight: 300;
+  @include breakpoint(laptop) {
+    text-align: center;
+  }
 }
 
 .about--column-padding {
-  padding-left: 10px;
-  &:first-of-type {
-    padding-left: 0;
-  }
-  &:last-of-type {
-    padding-right: 5px;
-    padding-left: 20px;
+  padding-bottom: 30px;
+  @media only screen and (min-width: 992px){
+    padding-bottom: 0;
+    padding-left: 10px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 5px;
+      padding-left: 20px;
+    }
   }
 }
 
 .about__button {
   margin: 50px auto 0 auto;
+  @include breakpoint(laptop) {
+    margin: 30px auto 0 auto;
+  }
 }

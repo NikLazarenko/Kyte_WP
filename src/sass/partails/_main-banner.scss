@@ -3,8 +3,12 @@
   width: 100%;
   padding-top: 88px;
   height: $main-banner-height;
-  background: url("../img/main-background.png") no-repeat center 80px fixed;
+  background: url("../img/main-background.png") no-repeat center 70px fixed;
   background-size: cover;
+  @include breakpoint(phone) {
+    height: $main-banner-mobile-height;
+    background-position: center 20px;
+  }
 }
 
 .main-banner__caption {
@@ -15,6 +19,12 @@
   color: $white-color;
   text-align: center;
   text-transform: uppercase;
+  @include breakpoint(tablet) {
+    padding: 0 20px;
+  }
+  @include breakpoint(phone) {
+    height: $main-banner-mobile-height;
+  }
 }
 
 .main-banner__general-caption {
@@ -24,6 +34,15 @@
   background-color: rgba(0, 0, 0, .3);
   font-size: 80px;
   font-weight: 900;
+  @include breakpoint(laptop) {
+    font-size: 67px;
+  }
+  @include breakpoint(tablet) {
+    font-size: 56px;
+  }
+  @include breakpoint(phone) {
+    font-size: 43px;
+  }
 }
 
 .main-banner__secondary-caption {
@@ -33,6 +52,16 @@
   background-color: rgba(0, 0, 0, .3);
   font-size: 50px;
   font-weight: 300;
+  @include breakpoint(laptop) {
+    font-size: 42px;
+  }
+  @include breakpoint(tablet) {
+    font-size: 36px;
+  }
+  @include breakpoint(phone) {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
 }
 
 .main-banner__social-link {
@@ -62,5 +91,13 @@
     line-height: $social-item-height;
     text-align: center;
     font-size: 30px;
+  }
+  @include breakpoint(phone) {
+    height: 40px;
+    width: 40px;
+    .fa {
+      line-height: 40px;
+      font-size: 24px;
+    }
   }
 }

@@ -23,6 +23,15 @@ $(document).ready(function() {
         arrows: false,
         responsive: [
             {
+                breakpoint: 1600,
+                settings: {
+                    autoplaySpeed: 2000,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                     autoplaySpeed: 2000,
@@ -45,6 +54,12 @@ $(document).ready(function() {
             $('.header__mobile-menu').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
             clicked = 0;
         }
+    });
+
+    $('.header__mobile-link').click(function () {
+        $('.header__mobile-menu').removeClass('animated fadeInRight').addClass('animated fadeOutRight');
+        clicked = 0;
+        $('.hamburger').toggleClass('is-active');
     });
 
 

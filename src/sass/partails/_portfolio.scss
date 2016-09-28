@@ -12,10 +12,16 @@
 .portfolio__section-desc {
   padding-bottom: 48px;
   color: $light-gray-color;
+  @include breakpoint(tablet) {
+    padding-bottom: 40px;
+  }
 }
 
 .portfolio__items {
   margin-bottom: $section-margin-bottom;
+  @include breakpoint(tablet) {
+    margin-bottom: $section-margin-bottom-small;
+  }
 }
 
 .portfolio__item {
@@ -36,4 +42,7 @@
 
 .portfolio__item--padding {
   padding-right: 0;
+  @include breakpoint(desktop) {
+    padding-left: 0;
+  }
 }
