@@ -60,11 +60,8 @@
       margin-bottom: 0;
     }
   }
-  @include breakpoint(laptop) {
-    padding-bottom: 45px;
-  }
-  @include breakpoint(phone) {
-    padding-bottom: 35px;
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
